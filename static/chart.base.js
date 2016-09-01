@@ -99,6 +99,9 @@
     function initResizeHandler() {
         // IE continuosly reloads the chart for some strange reasons
         if (navigator.userAgent.match(/iPad|iPhone|iPod|msie/i) === null) {
+            $(window).on('load', function() {
+                reloadLater();
+            }),
             $(window).on('resize', function() {
                 // IMPORTANT: throttle resize events, do not remover timeout
                 reloadLater();
