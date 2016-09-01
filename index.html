@@ -370,7 +370,7 @@
         data: "ID,      DEPARTMENT,     FEMICIDE,    ATTEMPTED\n    PE.AM,   Amazonas,7,26\n    PE.AN,   Ancash,33,38\n    PE.AP,   Apur\u00edmac,6,9\n    PE.AR,   Arequipa,60,60\n    PE.AY,   Ayacucho,41,39\n    PE.CJ,   Cajamarca,19,22\n    PE.CL,   Callao,24,34\n    PE.CS,   Cusco,35,42\n    PE.HV,   Huancavelica,8,24\n    PE.HC,   Hu\u00e1nuco,23,38\n    PE.IC,   Ica,16,31\n    PE.JU,   Jun\u00edn,46,57\n    PE.LL,   La Libertad,27,39\n    PE.LB,   Lambayeque,24,7\n    PE.LR,   Lima,91,86\n    PE.LP,   Lima Metropolitana,202,191\n    PE.LO,   Loreto,8,24\n    PE.MD,   Madre de Dios,7,8\n    PE.MQ,   Moquegua,6,4\n    PE.PA,   Pasco,12,21\n    PE.PI,   Piura,24,27\n    PE.PU,   Puno,43,36\n    PE.SM,   San Mart\u00edn,11,27\n    PE.TA,   Tacna,24,10\n    PE.TU,   Tumbes,4,8\n    PE.UC,   Ucayali,11,13\n"
     });
     </script>
-    <div class="social-sharing noscript" style="display: block;">
+    <div class="social-sharing noscript" style="display: none">
         <div class="facebook" style="height: 35px; opacity: 1;">
             <a href="https://www.facebook.com/sharer/sharer.php?u=">&nbsp;f&nbsp;</a>
         </div>
@@ -461,7 +461,7 @@
         });
 
         setTimeout(function() {
-            $('.social-sharing').show();
+            $('.social-sharing').hide();
             $('.social-sharing div').height(35).animate({
                 opacity: 1
             }, 100);
